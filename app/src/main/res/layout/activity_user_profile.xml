@@ -1,0 +1,90 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 프로필 이미지 -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/profile_icon"
+            android:contentDescription="프로필 이미지"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop" />
+
+        <!-- 사용자 이름 -->
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 전화번호 -->
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="전화번호"
+            android:inputType="phone"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 나이 -->
+        <EditText
+            android:id="@+id/edit_text_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="나이"
+            android:inputType="number"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 성별 -->
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남성" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여성" />
+        </RadioGroup>
+
+        <!-- 주소 -->
+        <EditText
+            android:id="@+id/edit_text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="주소"
+            android:inputType="textPostalAddress"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 저장 버튼 -->
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,115 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"> <!-- 전체 배경 흰색 -->
+
+    <!-- 최상단 중앙 로고 -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/app_logo"
+        android:contentDescription="앱 로고" />
+
+    <!-- 카메라 실행 버튼 -->
+    <RelativeLayout
+        android:id="@+id/btn_camera"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/camera_button_style">
+
+    <!-- 카메라 아이콘 -->
+    <ImageView
+        android:id="@+id/icon_camera"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/camera"
+        android:layout_centerHorizontal="true"
+        android:tint="#000000"
+        android:contentDescription="카메라 아이콘" />
+
+    <!-- 텍스트 -->
+    <TextView
+        android:id="@+id/text_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_camera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="안전 걷기 시작 !"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+</RelativeLayout>
+
+    <!-- 설정 버튼 -->
+    <RelativeLayout
+        android:id="@+id/btn_settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/circular_button_black">
+
+        <!-- 설정 아이콘 -->
+        <ImageView
+            android:id="@+id/icon_settings"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_centerInParent="true"
+            android:src="@android:drawable/ic_menu_manage"
+            android:tint="#FFFFFF"
+            android:contentDescription="설정 아이콘" />
+    </RelativeLayout>
+
+    <!-- 가이드 버튼 -->
+    <RelativeLayout
+        android:id="@+id/btn_guide"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/rectangular_button_black">
+
+        <!-- 가이드 텍스트 -->
+        <TextView
+            android:id="@+id/text_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="가이드"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:contentDescription="가이드 버튼 텍스트" />
+    </RelativeLayout>
+
+    <!-- 긴급 호출 버튼 -->
+    <RelativeLayout
+        android:id="@+id/btn_emergency_call"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangular_button_black">
+
+        <!-- 긴급 호출 텍스트 -->
+        <TextView
+            android:id="@+id/text_emergency_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="119 긴급 호출"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:contentDescription="긴급 호출 버튼 텍스트" />
+    </RelativeLayout>
+</RelativeLayout>

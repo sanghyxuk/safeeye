@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 사용자 이름 설정 -->
+    <Preference
+        android:key="user_profile"
+        android:title="사용자 프로필"
+        android:summary="프로필을 수정합니다."
+        android:defaultValue="사용자"
+        android:fragment="com.android.safeeye.UserProfileActivity" />
+
+    <!-- 알림 활성화 -->
+    <SwitchPreferenceCompat
+        android:key="example_switch"
+        android:title="알림 활성화"
+        android:summary="알림을 활성화하거나 비활성화합니다."
+        android:defaultValue="true" />
+
+    <!-- 테마 선택 -->
+    <ListPreference
+        android:key="example_list"
+        android:title="테마 선택"
+        android:summary="앱의 테마를 선택합니다."
+        android:entries="@array/theme_options"
+        android:entryValues="@array/theme_values"
+        android:defaultValue="light" />
+
+    <!-- 진동 알림 설정 -->
+    <SwitchPreferenceCompat
+        android:key="vibration_alert"
+        android:title="진동 알림 설정"
+        android:summary="진동 알림을 활성화하거나 비활성화합니다."
+        android:defaultValue="true" />
+
+    <!-- 언어 선택 -->
+    <ListPreference
+        android:key="language_selection"
+        android:title="앱 언어 선택"
+        android:summary="앱의 언어를 선택합니다."
+        android:entries="@array/language_options"
+        android:entryValues="@array/language_values"
+        android:defaultValue="ko" />
+
+    <!-- 글자 크기 선택 -->
+    <ListPreference
+        android:key="font_size"
+        android:title="글자 크기 설정"
+        android:summary="앱의 글자 크기를 설정합니다."
+        android:entries="@array/font_size_options"
+        android:entryValues="@array/font_size_values"
+        android:defaultValue="medium" />
+</PreferenceScreen>
